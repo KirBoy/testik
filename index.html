@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div style="display: flex">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/k5pcFcJgJK8" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+    <div id="chat-embed-wrapper" height="315">
+    </div>
+    <iframe id="preview" style="border:0px;height:500px;width:500px;margin:5px;box-shadow: 0 0 16px 3px rgba(0,0,0,.2);"
+      src="https://xn--r1a.website/s/papch18"></iframe>
+  </div>
+  <iframe
+    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQYHyoCQTUZd45UwdWV3sikMWOCqMLuCfYsPxTrwM2Pj1S1ZEqn0rAHP4fE3xOxBEEzJxUtAB_evhTN/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+  <script>
+    let frame = document.createElement("iframe");
+    frame.referrerPolicy = "origin";
+    frame.src = "https://www.youtube.com/live_chat?v=k5pcFcJgJK8&embed_domain=" + window.location.hostname + "&dark_theme=1";
+    frame.frameBorder = "0";
+    frame.id = "chat-embed";
+    frame.height = '500px'
+    let wrapper = document.getElementById("chat-embed-wrapper");
+    wrapper.appendChild(frame);
+  </script>
+</body>
+
+</html>
